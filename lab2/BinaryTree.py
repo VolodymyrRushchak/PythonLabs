@@ -145,19 +145,3 @@ class BinaryTree:
 
     def delete_branches_negative_xy(self) -> None:
         self.__check_branch(self.__root)
-
-
-tree = BinaryTree()
-tree.add_element(Branch(Point(50, 60)))
-tree.add_element(Branch(Point(150, 30)))
-tree.add_element(Branch(Point(63, 22)))
-tree.add_element(Branch(Point(101, 103)))
-tree.add_element(Branch(Point(78, 53)))
-tree.add_element(Branch(Point(-78, -53)))
-tree.add_element(Branch(Point(-18, -43)))
-tree.add_element(Branch(Point(-75, -63)))
-
-tree.print_all_branches()
-print("\n")
-tree.delete_branches_negative_xy()
-tree.print_all_branches()
